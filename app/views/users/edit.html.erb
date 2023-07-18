@@ -1,10 +1,7 @@
-<h1>Editing user</h1>
+<h1 class="text-center mt-3">Редактирование профиля</h1>
 
-<%= render "form", user: @user %>
-
-<br>
-
-<div>
-  <%= link_to "Show this user", @user %> |
-  <%= link_to "Back to users", users_path %>
+<div class="row justify-content-center mt-3">
+  <div class="col-md-6">
+    <%= render 'form' %>
+  </div>
 </div>
