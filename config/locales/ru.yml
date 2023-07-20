@@ -12,14 +12,22 @@ ru:
       created: 'Ваш комментарий создан'
       destroyed: 'Комментарий удален'
       error: 'Ошибка с комментарием'
-      comment:
-        destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+    subscriptions:
+      created: 'Вы подписаны на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
 
   forms:
     title: "Название"
     address: 'Место проведения'
     datetime: 'Дата и время'
     description: 'Описание'
+    plural:
+      error:
+        one: "%{count} ошибка"
+        few: "%{count} ошибки"
+        many: "%{count} ошибок"
+        other: "%{count} ошибки"
 
   link:
     delete: 'Удалить'
@@ -46,14 +54,14 @@ ru:
     name: 'Шашлыки'
     company: 'Хороший программист'
 
-  plural:
-    error:
-      one: "%{count} ошибка"
-      few: "%{count} ошибки"
-      many: "%{count} ошибок"
-      other: "%{count} ошибки"
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
 
-  email:
-    one: "Email"
-    few: "Emails"
-    many: "Emails"
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+    form:
+      body: 'Ваш комментарий'
+      user_name: 'Имя участника'
+      user_email: 'Ваш email'

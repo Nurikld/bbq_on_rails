@@ -8,9 +8,10 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user_owner?
 
-  def current_user_owner?(event)
-    user_signed_in? && event.user == current_user
+  def current_user_owner?(model)
+    user_signed_in? && (
+      model.user == current_user ||
+        (model.try(:event).present? && model.event.user == current_user)
+    )
   end
 end
-
-
