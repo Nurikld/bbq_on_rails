@@ -6,6 +6,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   # Юзер может создавать много событий
   has_many :events
+  has_many :comments, dependent: :destroy
 
   validates :name, presence: true, length: {maximum: 35}
 
@@ -15,5 +16,4 @@ class User < ApplicationRecord
   def set_name
     self.name = "Товарисч №#{rand(777)}" if self.name.blank?
   end
-
 end

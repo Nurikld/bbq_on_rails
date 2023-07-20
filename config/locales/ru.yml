@@ -8,6 +8,12 @@ ru:
       destroyed: 'Вы удалили мероприятие :('
     users:
       updated: 'Вы обновили свой профиль'
+    comments:
+      created: 'Ваш комментарий создан'
+      destroyed: 'Комментарий удален'
+      error: 'Ошибка с комментарием'
+      comment:
+        destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
 
   forms:
     title: "Название"
@@ -46,3 +52,8 @@ ru:
       few: "%{count} ошибки"
       many: "%{count} ошибок"
       other: "%{count} ошибки"
+
+  email:
+    one: "Email"
+    few: "Emails"
+    many: "Emails"
