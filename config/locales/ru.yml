@@ -11,35 +11,38 @@ ru:
 
   forms:
     title: "Название"
+    address: 'Место проведения'
+    datetime: 'Дата и время'
+    description: 'Описание'
 
-  delete: "Удалить"
-  are_you_sure: "Вы уверены?"
-  event_deleted: "Событие было успешно удалено"
-  event_delete_failed: "Не удалось удалить событие."
+  link:
+    delete: 'Удалить'
+    edit: 'Изменить'
 
   activerecord:
     models:
       user: 'Пользователь'
       event: 'Событие'
 
-    attributes:
-      user:
-        email: 'Email'
-        name: 'Имя'
-        password: 'Пароль'
-        password_confirmation: 'Подтверждение пароля'
-      event:
-        title: 'Название'
-        address: 'Место проведения'
-        datetime: 'Дата и время'
-        description: 'Описание'
+  attributes:
+    user:
+      email: 'Email'
+      name: 'Имя'
+      password: 'Пароль'
+      password_confirmation: 'Подтверждение пароля'
+    event:
+      title: 'Название'
+      address: 'Место проведения'
+      datetime: 'Дата и время'
+      description: 'Описание'
 
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
 
-  errors:
-    one: "%{count} ошибка"
-    few: "%{count} ошибки"
-    many: "%{count} ошибок"
-    other: "%{count} ошибки"
+  plural:
+    error:
+      one: "%{count} ошибка"
+      few: "%{count} ошибки"
+      many: "%{count} ошибок"
+      other: "%{count} ошибки"

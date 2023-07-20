@@ -3,7 +3,7 @@
 <% if errors.any? %>
   <div class="alert alert-danger mt-3">
     <h4 class="alert-heading">
-      <%= pluralize(errors.count, "error") %> prohibited this user from being saved:
+      <%= t('plural.error', count: errors.count) %>:
     </h4>
     <ul>
       <% errors.each do |error| %>
