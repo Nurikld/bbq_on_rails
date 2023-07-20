@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_20_132048) do
     t.text "body"
     t.string "user_name"
     t.bigint "event_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["event_id"], name: "index_comments_on_event_id"
@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_20_132048) do
     t.string "user_name"
     t.string "user_email"
     t.bigint "event_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["event_id"], name: "index_subscriptions_on_event_id"

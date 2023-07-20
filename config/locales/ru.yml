@@ -22,12 +22,13 @@ ru:
     address: 'Место проведения'
     datetime: 'Дата и время'
     description: 'Описание'
-    plural:
-      error:
-        one: "%{count} ошибка"
-        few: "%{count} ошибки"
-        many: "%{count} ошибок"
-        other: "%{count} ошибки"
+
+  plural:
+    error:
+      one: "%{count} ошибка"
+      few: "%{count} ошибки"
+      many: "%{count} ошибок"
+      other: "%{count} ошибки"
 
   link:
     delete: 'Удалить'
@@ -65,3 +66,7 @@ ru:
       body: 'Ваш комментарий'
       user_name: 'Имя участника'
       user_email: 'Ваш email'
+
+  events:
+    event:
+      destroy_confirm: 'Вы уверены что хотите удалить событие?'
