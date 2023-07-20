@@ -1,0 +1,45 @@
+ru:
+  hello: 'Привет, мир!'
+
+  controllers:
+    events:
+      created: 'Вы создали новое мероприятие'
+      updated: 'Вы обновили мероприятие'
+      destroyed: 'Вы удалили мероприятие :('
+    users:
+      updated: 'Вы обновили свой профиль'
+
+  forms:
+    title: "Название"
+
+  delete: "Удалить"
+  are_you_sure: "Вы уверены?"
+  event_deleted: "Событие было успешно удалено"
+  event_delete_failed: "Не удалось удалить событие."
+
+  activerecord:
+    models:
+      user: 'Пользователь'
+      event: 'Событие'
+
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+      event:
+        title: 'Название'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание'
+
+  app:
+    name: 'Шашлыки'
+    company: 'Хороший программист'
+
+  errors:
+    one: "%{count} ошибка"
+    few: "%{count} ошибки"
+    many: "%{count} ошибок"
+    other: "%{count} ошибки"

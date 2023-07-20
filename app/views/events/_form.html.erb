@@ -2,7 +2,7 @@
   <%= render partial: 'partials/form_errors', locals: {model: @event} %>
 
   <div class="mb-3">
-    <%= f.label :title, class: 'form-label' %>
+    <%= f.label :title, t('forms.title'), class: 'form-label' %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
 
