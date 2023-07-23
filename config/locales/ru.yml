@@ -73,7 +73,7 @@ ru:
 
   devise:
     registrations:
-      edit: "Зарегистироваться"
+      change_pass: "Сменить пароль"
       password_too_short: "Слишком короткий пароль"
       update: "Обновить"
     passwords:
@@ -86,5 +86,13 @@ ru:
         unhappy: "Что-то не так?"
         confirm: "Вы уверены?"
         back: "Назад"
+      new:
+        forgot_password: "Забыли пароль?"
+        send_me_reset_password_instructions: "Отправить инструкции по сбросу пароля"
+    sessions:
+      new:
+        password: "Пароль"
+
+
 
 

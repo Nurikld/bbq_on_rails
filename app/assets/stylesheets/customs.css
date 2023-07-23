@@ -40,3 +40,7 @@
 .thumbnail-inner {
   padding: 20px 4px 4px;
 }
+
+.text-dark-gray {
+  color: #6c757d !important;
+}

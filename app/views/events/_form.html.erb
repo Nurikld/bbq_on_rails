@@ -3,22 +3,34 @@
 
   <div class="mb-3">
     <%= f.label :title, t('forms.title'), class: 'form-label' %>
-    <%= f.text_field :title, class: 'form-control' %>
+    <div class="input-group">
+      <span class="input-group-text"><i class="fas fa-book"></i></span>
+      <%= f.text_field :title, class: 'form-control', placeholder: t('forms.title') %>
+    </div>
   </div>
 
   <div class="mb-3">
     <%= f.label :address, t('forms.address'), class: 'form-label' %>
-    <%= f.text_field :address, class: 'form-control' %>
+    <div class="input-group">
+      <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+      <%= f.text_field :address, class: 'form-control', placeholder: t('forms.address') %>
+    </div>
   </div>
 
   <div class="mb-3">
     <%= f.label :datetime, t('forms.datetime'), class: 'form-label' %>
-    <%= f.datetime_select :datetime, class: 'form-control' %>
+    <div class="input-group">
+      <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+      <%= f.datetime_select :datetime, class: 'form-control' %>
+    </div>
   </div>
 
   <div class="mb-3">
     <%= f.label :description, t('forms.description'), class: 'form-label' %>
-    <%= f.text_area :description, class: 'form-control' %>
+    <div class="input-group">
+      <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+      <%= f.text_area :description, class: 'form-control', placeholder: t('forms.description') %>
+    </div>
   </div>
 
   <div class="actions">
@@ -26,4 +38,3 @@
     или <%= link_to 'вернуться', :back %>
   </div>
 <% end %>
-
