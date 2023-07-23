@@ -67,6 +67,25 @@ ru:
       user_name: 'Имя участника'
       user_email: 'Ваш email'
 
+
   events:
     event:
       destroy_confirm: 'Вы уверены что хотите удалить событие?'
+
+  devise:
+    registrations:
+      edit: "Зарегистироваться"
+      password_too_short: "Слишком короткий пароль"
+      update: "Обновить"
+    passwords:
+      edit:
+        leave_blank: "(оставьте форму пустой, если не хотите менять пароль)"
+        min_length: "минимальное количество символов"
+        current_pass_conf: "(введите свой текущий пароль для подтверждения изменений)"
+        update: "Обновить"
+        cancel_account: "Выйти из моего аккаунта"
+        unhappy: "Что-то не так?"
+        confirm: "Вы уверены?"
+        back: "Назад"
+
+
