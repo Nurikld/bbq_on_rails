@@ -13,8 +13,11 @@
 
       <%= link_to(
             fa_icon('trash'), event_comment_path(comment.event, comment),
-            method: :delete, data: {confirm: t('.destroy_confirm')}
-          ) %>
+            data: {
+            turbo_method: :delete,
+            turbo_confirm: t('.destroy_confirm')
+          })
+      %>
     <% end %>
   </p>
 </div>
