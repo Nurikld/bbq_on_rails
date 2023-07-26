@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Войти</h2>
+  <h2><%= t('sessions.sign_in') %></h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
@@ -19,6 +19,9 @@
       </div>
     </div>
 
-    <%= f.submit 'Войти', class: 'btn btn-primary' %>
+    <div class="actions mt-3">
+      <%= f.submit t('sessions.submit'), class: 'btn btn-primary' %>
+    </div>
+
   <% end %>
 </div>

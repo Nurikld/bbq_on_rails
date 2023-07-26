@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Зарегистрироваться</h2>
+    <h2><%= t('registrations.title') %></h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
@@ -27,13 +27,15 @@
         </div>
       </div>
 
-      <%= f.submit 'Зарегистрироваться', class: 'btn btn-primary' %>
-    <% end %>
+      <div class="mt-3">
+        <%= link_to t('registrations.forgot_password'), new_password_path(resource_name), class: 'btn btn-primary' %>
+      </div>
 
-    <div class="mt-3">
-      <%= link_to "Забыли пароль?", new_password_path(resource_name), class: 'btn btn-primary' %>
-    </div>
+      <div class="actions mt-3">
+        <%= f.submit t('registrations.submit'), class: 'btn btn-primary' %>
+      </div>
 
-    <%= render 'devise/shared/links' %>
+      <%= render 'devise/shared/links' %>
 
-  </div>
+  <% end %>
+</div>

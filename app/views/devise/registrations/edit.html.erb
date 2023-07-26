@@ -1,5 +1,5 @@
 <div class="container">
-  <h2><%= t('devise.registrations.change_pass') %></h2>
+  <h2><%= t('registrations.edit.change_pass') %></h2>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
@@ -19,7 +19,7 @@
     <% end %>
 
     <div class="form-group mb-3">
-      <%= f.label :password %> <i><%= t('devise.passwords.edit.leave_blank') %></i>
+      <%= f.label :password %> <i><%= t('registrations.edit.leave_blank') %></i>
       <div class="input-group">
         <span class="input-group-text text-dark-gray">
           <i class="fas fa-lock"></i>
@@ -27,7 +27,7 @@
         <%= f.password_field :password, autocomplete: "new-password", class: 'form-control' %>
       </div>
       <% if @minimum_password_length %>
-        <em> <%= t('devise.passwords.edit.min_length') %> <%= @minimum_password_length %> </em>
+        <em> <%= t('registrations.edit.min_length') %> <%= @minimum_password_length %> </em>
       <% end %>
     </div>
 
@@ -42,7 +42,7 @@
     </div>
 
     <div class="form-group mb-3">
-      <%= f.label :current_password %> <i><%= t('devise.passwords.edit.current_pass_conf')%></i>
+      <%= f.label :current_password %> <i><%= t('registrations.edit.current_pass_conf')%></i>
       <div class="input-group">
         <span class="input-group-text text-dark-gray">
           <i class="fas fa-lock"></i>
@@ -51,14 +51,18 @@
       </div>
     </div>
 
-    <div class="actions mb-3">
-      <%= f.submit t('devise.passwords.edit.update'), class: 'btn btn-primary' %>
+    <div class="actions mt-3">
+      <%= f.submit t('registrations.edit.update'), class: 'btn btn-primary' %>
     </div>
 
-    <div class="mb-3">
-      <%= button_to t('devise.passwords.edit.cancel_account'), registration_path(resource_name), data: { confirm: t('devise.passwords.edit.confirm'), turbo_confirm: t('devise.passwords.edit.confirm') }, method: :delete, class: 'btn btn-danger' %>
+    <div class="mt-3">
+      <%= button_to t('registrations.edit.cancel_account'), registration_path(resource_name), data: { confirm: t('devise.passwords.edit.confirm'), turbo_confirm: t('devise.passwords.edit.confirm') }, method: :delete, class: 'btn btn-danger' %>
     </div>
 
-    <%= link_to t('devise.passwords.edit.back'), :back, class: 'btn btn-secondary' %>
+    <div class="mt-3">
+      <%= link_to t('registrations.edit.back'), :back, class: 'btn btn-secondary' %>
+    </div>
+
   <% end %>
+
 </div>

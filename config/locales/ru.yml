@@ -1,5 +1,4 @@
 ru:
-  hello: 'Привет, мир!'
 
   controllers:
     events:
@@ -22,6 +21,8 @@ ru:
     address: 'Место проведения'
     datetime: 'Дата и время'
     description: 'Описание'
+    save: 'Сохранить'
+    back: 'Вернуться'
 
   plural:
     error:
@@ -54,6 +55,10 @@ ru:
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+    profile: 'Профиль'
+    log_out: 'Выйти'
+    sign_in: 'Войти'
+    sign_up: 'Зарегистрироваться'
 
   comments:
     comment:
@@ -66,33 +71,40 @@ ru:
       body: 'Ваш комментарий'
       user_name: 'Имя участника'
       user_email: 'Ваш email'
+      send: 'Отправить'
+      subscribe: 'Подписаться'
 
   events:
     event:
-      destroy_confirm: 'Вы уверены что хотите удалить событие?'
+      edit: 'Редактирование события'
+      all: 'События'
+      create_event: 'Создать событие'
+    new:
+      edit: 'Редактировать'
 
-  devise:
-    registrations:
-      change_pass: "Сменить пароль"
-      password_too_short: "Слишком короткий пароль"
+  registrations:
+    title: "Зарегистрироваться"
+    submit: "Подтвердить"
+    forgot_password: 'Забыли пароль'
+
+    edit:
+      leave_blank: "(оставьте форму пустой, если не хотите менять пароль)"
+      min_length: "минимальное количество символов"
+      current_pass_conf: "(введите свой текущий пароль для подтверждения изменений)"
       update: "Обновить"
-    passwords:
-      edit:
-        leave_blank: "(оставьте форму пустой, если не хотите менять пароль)"
-        min_length: "минимальное количество символов"
-        current_pass_conf: "(введите свой текущий пароль для подтверждения изменений)"
-        update: "Обновить"
-        cancel_account: "Выйти из моего аккаунта"
-        unhappy: "Что-то не так?"
-        confirm: "Вы уверены?"
-        back: "Назад"
-      new:
-        forgot_password: "Забыли пароль?"
-        send_me_reset_password_instructions: "Отправить инструкции по сбросу пароля"
-    sessions:
-      new:
-        password: "Пароль"
+      cancel_account: "Выйти из моего аккаунта"
+      unhappy: "Что-то не так?"
+      confirm: "Вы уверены?"
+      back: "Назад"
+      change_pass: 'Сменить пароль'
+    new:
+      forgot_password: "Забыли пароль?"
+      send_me_reset_password_instructions: "Отправить инструкции по сбросу пароля"
 
+  sessions:
+    sign_in: 'Войти'
+    submit: "Подтвердить"
 
-
-
+  users:
+    save: 'Сохранить'
+    back: 'Вернуться'

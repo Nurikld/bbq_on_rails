@@ -14,6 +14,7 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+
     message = {notice: I18n.t('controllers.comments.destroyed')}
 
     if current_user_can_edit?(@comment)
@@ -23,6 +24,7 @@ class CommentsController < ApplicationController
     end
 
     redirect_to @event, message
+
   end
 
   private
