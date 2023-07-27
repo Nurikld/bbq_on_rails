@@ -8,6 +8,8 @@ class Subscription < ApplicationRecord
   validates :user_id, uniqueness: {scope: :event_id}, if: -> { user.present? }
   validates :user_email, uniqueness: {scope: :event_id}, unless: -> { user.present? }
 
+  validate :ban_self_subscription
+
   def user_name
     if user.present?
       user.name
@@ -23,4 +25,11 @@ class Subscription < ApplicationRecord
       super
     end
   end
+
+  def ban_self_subscription
+     if user.present? && user_id == event.user_id || user_email == event.user.email
+    errors.add(:base,  "")
+     end
+  end
+
 end

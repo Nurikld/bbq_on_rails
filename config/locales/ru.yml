@@ -67,6 +67,7 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+
     form:
       body: 'Ваш комментарий'
       user_name: 'Имя участника'
@@ -79,6 +80,9 @@ ru:
       edit: 'Редактирование события'
       all: 'События'
       create_event: 'Создать событие'
+      invite: 'Приглашает'
+      will: 'Пойдут'
+      i_will: 'Я пойду'
     new:
       edit: 'Редактировать'
 
@@ -108,3 +112,4 @@ ru:
   users:
     save: 'Сохранить'
     back: 'Вернуться'
+
